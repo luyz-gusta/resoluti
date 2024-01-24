@@ -1,0 +1,53 @@
+.group {
+    display: flex;
+    line-height: 30px;
+    align-items: center;
+    position: relative;
+    width: 600px;
+}
+
+.input {
+    width: 100%;
+    height: 45px;
+    line-height: 30px;
+    padding: 0 3rem;
+    /* padding-left: 3rem; */
+    border: 2px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    background-color: #f8fafc;
+    transition: .5s ease;
+    
+    color: var(--black-default);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.input::placeholder {
+    color: #94a3b8;
+}
+
+.input:focus,
+.input:hover {
+    outline: none;
+    border-color: var(--green-primary);
+    background-color: #fff;
+    box-shadow: 0 0 0 5px rgb(0 205 175 / 30%);
+}
+
+.icon {
+    position: absolute;
+    left: 1rem;
+    fill: none;
+    font-size: 1rem;
+    display: flex;
+}
+
+.icon-password {
+    position: absolute;
+    right: 1rem;
+    fill: none;
+    font-size: 1rem;
+    display: flex;
+}

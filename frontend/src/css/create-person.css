@@ -1,0 +1,205 @@
+.create-person {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(180deg, #F86D1C 0%, #FB823B 80%, #FF985C 100%);
+}
+
+.container-create-person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 36px 58px 100px 58px;
+    gap: 64px;
+}
+
+.sec-personal-data,
+.sec-address,
+.sec-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    width: 100%;
+}
+
+.sec-title {
+    color: var(--white-default);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.input-label {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.input-label label {
+    color: var(--black-default);
+    font-size: 1.25rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.input-label input {
+    width: 520px;
+    height: 36px;
+    border: 2px solid transparent;
+    line-height: 30px;
+    border-radius: 5px;
+    outline: none;
+    background-color: #f8fafc;
+    transition: .5s ease;
+    padding-left: 6px;
+
+    color: var(--black-default);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.input-label select {
+    width: 520px;
+    height: 36px;
+    border: 2px solid transparent;
+    line-height: 30px;
+    border-radius: 5px;
+    outline: none;
+    background-color: #f8fafc;
+    transition: .5s ease;
+    padding-left: 6px;
+
+    color: var(--black-default);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.input-label input:focus,
+.input-label input:hover,
+.input-label select:hover {
+    outline: none;
+    border-color: var(--green-primary);
+    background-color: #fff;
+    box-shadow: 0 0 0 5px rgb(0 205 175 / 30%);
+}
+
+.input-label input:focus+label {
+    font-size: 1.2rem;
+    color: var(--green-primary);
+    font-weight: 600;
+}
+
+.box-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 44px 120px;
+}
+
+.line {
+    width: 100%;
+    background-color: var(--black-default);
+    height: 1px;
+    border-radius: 5px;
+}
+
+.btn-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange-primary);
+    font-size: clamp(1rem, 0.8036rem + 0.7143vw, 1.5rem);
+    font-weight: 700;
+    background-color: var(--white-default);
+    border: 2px solid var(--black-default);
+    border-radius: 10px;
+    /* width: 200px; */
+    padding: 2vh 1vw;
+    height: 48px;
+}
+
+.address-form,
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 48px;
+}
+
+.title-form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.btn-save {
+    width: 100%;
+}
+
+.btn-back {
+    display: flex;
+    gap: 4px;
+    color: var(--white-default);
+    padding: 20px 0px 0px 58px;
+    cursor: pointer;
+    width: max-content;
+}
+
+.btn-back p {
+    font-size: 1.75rem;
+}
+
+.btn-back svg {
+    width: auto;
+    height: 32px;
+}
+
+@media(max-width: 1300px) {
+    .input-label input,  .input-label select {
+        width: 35vw;
+    }
+}
+
+@media(max-width: 768px) {
+    .btn-back{
+        padding: 20px 0px 0px 12px;
+    }
+
+    .input-label input{
+        width: 32vw;
+    }
+
+    .input-label select {
+        width: 35vw;
+    }
+}
+
+@media(max-width: 640px) {
+
+    .container-create-person {
+        padding: 36px 24px 100px 24px;
+        gap: 64px;
+    }
+
+    .input-label label{
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+}
+
+@media(max-width: 540px) {
+
+    .input-label input, .input-label select{
+        width: 85vw;
+    }
+
+    .input-label label{
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .sec-title{
+        font-size: 1.8rem;
+    }
+}

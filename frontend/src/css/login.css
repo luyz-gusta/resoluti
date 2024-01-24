@@ -1,0 +1,138 @@
+.company {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--white-default);
+    gap: 10px;
+}
+
+.pic-programmer{
+    width: 800px;
+    height: auto;
+}
+
+.title {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.title h1 {
+    color: var(--white-default);
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+.small-logo {
+    width: auto;
+    height: 6.5rem;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 140px;
+    height: 636px;
+}
+
+.group-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.no-count {
+    width: 100%;
+    color: var(--white-default);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.txt-register {
+    color: var(--white-default);
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 700;
+}
+
+button {
+    border: inherit;
+    outline: inherit;
+    background-color: inherit;
+}
+
+.btn-enter {
+    border-radius: 10px;
+    width: 280px;
+    height: 70px;
+    background-color: var(--black-primary);
+    cursor: pointer;
+
+    color: var(--white-default);
+    font-size: 2rem;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 1440px){
+    .big-logo{
+        width: 80%;
+    }
+
+    .pic-programmer{
+        width: 90%;
+    }
+
+    .title {
+        gap: 0.5rem;
+    }
+    
+    .title h1 {
+        font-size: 5rem;
+    }
+    
+    .small-logo {
+        width: auto;
+        height: 5.5rem;
+    }
+
+    .group{
+        width: 40vw;
+    }
+}
+
+@media(max-width: 960px){
+    .login{
+        display: grid;
+        grid-template-columns: 100vw;
+        width: 100vw;
+    }
+
+    .group{
+        width: 80vw;
+    }
+
+    .form-container{
+        grid-column: 1;
+        width: 100vw;
+    }
+
+    .company{
+        display: none;
+    }
+}
