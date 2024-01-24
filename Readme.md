@@ -187,7 +187,7 @@ DELIMITER ;
 ## Como rodar a aplicação localmente
 
 - 1º Vá no MySqlWorkbench e execute o script acima.
-- 2º Baixe todo o projeto e execute o comando "npm i" em ambos.
+- 2º Baixe todo o projeto e execute o comando "npm i" dentro de ambas as pastas.
 <pre>
 npm i
 </pre>
