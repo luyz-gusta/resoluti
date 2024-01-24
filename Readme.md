@@ -196,11 +196,15 @@ npm i
 <pre>
 DATABASE_URL="mysql://usernanme:password@localhost:3306/resoluti_db"
 </pre>
-- 5º Após essa configurações execute o banckend com o comando:
+- 5º Após essa configurações execute o comando para sincronizar o prisma:
+<pre>
+npx prisma generate
+</pre>
+- 6º Execute o banckend com o comando:
 <pre>
 npm run dev
 </pre>
-- 6º Backend configurado, vá para o frontend e execute com o comando:
+- 7º Backend configurado, vá para o frontend e execute com o comando:
 <pre>
 npm start
 </pre>
